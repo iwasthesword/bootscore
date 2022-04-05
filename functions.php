@@ -261,6 +261,7 @@ function bootscore_scripts() {
   // bootScore
   require_once 'inc/scss-compiler.php';
   bootscore_compile_scss();
+  bootscore_compile_json();
   wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css', array(), $modificated_bootscoreCss);
 
   // Fontawesome
